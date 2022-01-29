@@ -6,7 +6,7 @@ specifiers:
   esbuild: 0.13.15
   load-tsconfig: ^0.2.0
   prettier: 2.5.1
-  tsup: 5.11.11
+  tsup: 5.11.12
   typescript: 4.5.5
   vitest: 0.2.5
 
@@ -18,7 +18,7 @@ devDependencies:
   '@types/node': 16.11.21
   esbuild: 0.13.15
   prettier: 2.5.1
-  tsup: 5.11.11_typescript@4.5.5
+  tsup: 5.11.12_typescript@4.5.5
   typescript: 4.5.5
   vitest: 0.2.5
 
@@ -107,12 +107,14 @@ packages:
       fill-range: 7.0.1
     dev: true
 
-  /bundle-require/2.2.0_esbuild@0.14.14:
-    resolution: {integrity: sha512-JDVxYEAxEX1g8AWtadiIkCkFf42RulEl5AOIvUa4cpuEL/VKpK2lJwogyswHnp+qizNQxM0Ylamw7CjPRaJZuA==}
+  /bundle-require/3.0.2_esbuild@0.14.14:
+    resolution: {integrity: sha512-WLS50LRdi8oAMnQfoxqjI3Fszi0xaI6dJumvtX909u0WREkYCuFGeE2UwMn5H8bSUXWtUB0XeBqNkgpVjMcYyQ==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     peerDependencies:
       esbuild: '>=0.13'
     dependencies:
       esbuild: 0.14.14
+      load-tsconfig: 0.2.0
     dev: true
 
   /cac/6.7.12:
@@ -719,7 +721,6 @@ packages:
     engines: {node: '>=14'}
     dependencies:
       strip-json-comments: 4.0.0
-    dev: false
 
   /local-pkg/0.4.1:
     resolution: {integrity: sha512-lL87ytIGP2FU5PWwNDo0w3WhIo2gopIAxPg9RxDYF7m4rr5ahuZxP22xnJHIvaLTe4Z9P6uKKY2UHiwyB4pcrw==}
@@ -962,7 +963,6 @@ packages:
   /strip-json-comments/4.0.0:
     resolution: {integrity: sha512-LzWcbfMbAsEDTRmhjWIioe8GcDRl0fa35YMXFoJKDdiD/quGFmjJjdgPjFJJNwCMaLyQqFIDqCdHD2V4HfLgYA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-    dev: false
 
   /sucrase/3.20.3:
     resolution: {integrity: sha512-azqwq0/Bs6RzLAdb4dXxsCgMtAaD2hzmUr4UhSfsxO46JFPAwMnnb441B/qsudZiS6Ylea3JXZe3Q497lsgXzQ==}
@@ -1016,8 +1016,8 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /tsup/5.11.11_typescript@4.5.5:
-    resolution: {integrity: sha512-rgbTu+KhAI9PdGUS07rKohDXbRLTstBGJaxl75q7RZYRGF+n+kN8L4RlXY5pqYb9Hsq0gEB6nS39v7nSvVBS+g==}
+  /tsup/5.11.12_typescript@4.5.5:
+    resolution: {integrity: sha512-zwOcdMaWKgbcJeWQ654OYdCfcy+dj9d3nzutPPmqiDPeHkmxjovIFX6xqvPTcIkMEuTsUgHuQDoJ0qS3r16zqA==}
     hasBin: true
     peerDependencies:
       typescript: ^4.1.0
@@ -1025,7 +1025,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      bundle-require: 2.2.0_esbuild@0.14.14
+      bundle-require: 3.0.2_esbuild@0.14.14
       cac: 6.7.12
       chokidar: 3.5.2
       debug: 4.3.2
